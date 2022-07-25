@@ -54,3 +54,12 @@ input{
 h1{
     font-family:'Times New Roman', Times, serif;
 }
+#checked {
+    color:gold;
+}
+#revw {
+    width: 550px;
+}
+#ratew{
+    width:150px;
+}

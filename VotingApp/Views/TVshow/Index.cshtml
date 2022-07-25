@@ -10,7 +10,7 @@
     <p>
         <a asp-action="Create">Create New</a>
     </p>
-    <table class="table">
+    <table class="table table-hover">
         <thead>
             <tr>
                 <th>
@@ -22,10 +22,10 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Reviewer)
                 </th>
-                <th>
+                <th id="revw">
                     @Html.DisplayNameFor(model => model.Review)
                 </th>
-                <th>
+                <th id="ratew">
                     @Html.DisplayNameFor(model => model.Rating)
                 </th>
                 @*<th>
@@ -45,14 +45,22 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.ShowName)
                 </td>
-                <td>
+                <td >
                     @Html.DisplayFor(modelItem => item.Reviewer)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Review)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Rating)
+                    @*@Html.DisplayFor(modelItem => item.Rating)*@
+                    @for(int i = 0; i <item.Rating; i++)
+                    {
+                        <span id="checked" class="fa fa-star"></span>
+                    }
+                    @for(int i = item.Rating;i<5; i++)
+                    {
+                        <span class="fa fa-star"></span>
+                    }
                 </td>
                 @*<td>
             @Html.DisplayFor(modelItem => item.ShowImg)
