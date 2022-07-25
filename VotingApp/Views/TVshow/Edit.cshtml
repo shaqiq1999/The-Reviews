@@ -1,0 +1,52 @@
+﻿@model VotingApp.Areas.Identity.Data.TVshow
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>TVshow</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ShowName" class="control-label"></label>
+                <input asp-for="ShowName" class="form-control" />
+                <span asp-validation-for="ShowName" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Reviewer" />
+            <div class="form-group">
+                <label asp-for="Review" class="control-label"></label>
+                <input asp-for="Review" class="form-control" />
+                <span asp-validation-for="Review" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShowImg" class="control-label"></label>
+                <input asp-for="ShowImg" class="form-control" />
+                <span asp-validation-for="ShowImg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
