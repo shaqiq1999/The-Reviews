@@ -14,11 +14,11 @@ namespace VotingApp.Data
           : base(options)
         {
         }
-        public DbSet<AdminUser> Admin { get; set; }
+        
         public DbSet<TVshow> TvShow { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<AdminUser>().ToTable("Admintable");
+            //builder.Entity<AdminUser>().ToTable("Admintable");
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);

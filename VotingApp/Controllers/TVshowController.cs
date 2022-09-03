@@ -194,12 +194,16 @@ namespace VotingApp.Controllers
         {
             var tVshow = await _context.TvShow.FindAsync(id);
 
-            var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "image", tVshow.ShowImg);
-            if (System.IO.File.Exists(imagePath))
-                System.IO.File.Delete(imagePath);
-
-
-            _context.TvShow.Remove(tVshow);
+            string current = tVshow.Reviewer;
+            var userId = _userManager.GetUserId(HttpContext.User);
+            VoteAppUser user = _userManager.FindByIdAsync(userId).Result;
+            if (user.Name == current)
+            {
+                var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "image", tVshow.ShowImg);
+                if (System.IO.File.Exists(imagePath))
+                    System.IO.File.Delete(imagePath);
+                _context.TvShow.Remove(tVshow);
+            }
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

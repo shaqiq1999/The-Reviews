@@ -181,7 +181,6 @@ D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.deps
 D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.runtimeconfig.json
 D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.runtimeconfig.dev.json
 D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.dll
-D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\ref\TheReviews.dll
 D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.pdb
 D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.Views.dll
 D:\storage\chrome\Practice\TheReviews\VotingApp\bin\Debug\net5.0\TheReviews.Views.pdb
@@ -321,12 +320,6 @@ D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Areas\Ide
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\AdminUser\Create.cshtml.g.cs
-D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\AdminUser\Delete.cshtml.g.cs
-D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\AdminUser\Details.cshtml.g.cs
-D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\AdminUser\Edit.cshtml.g.cs
-D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\AdminUser\Index.cshtml.g.cs
-D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\AdminUser\Vote.cshtml.g.cs
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -348,3 +341,4 @@ D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\TheReviews.dll
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\ref\TheReviews.dll
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\TheReviews.pdb
 D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\TheReviews.genruntimeconfig.cache
+D:\storage\chrome\Practice\TheReviews\VotingApp\obj\Debug\net5.0\refint\TheReviews.dll
