@@ -1,13 +1,19 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using VotingApp.Areas.Identity.Data
+
+@inject SignInManager<VoteAppUser> SignInManager
+@inject UserManager<VoteAppUser> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - The Reviews</title>
 
-    <link rel="stylesheet" href="~/Styles/StyleS.css" />
+    <link rel="stylesheet" href="~/Styles/Style.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/siteS.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.12.1/b-2.2.3/fc-4.1.0/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/datatables.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,15 +40,25 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="TVshow" asp-action="Index">TV Shows</a>
-                        </li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="TVshow" asp-action="Index">TV Shows</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="TVshow" asp-action="Create">Add TV Show Reviews</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Tvshow">TV Shows</a>
+                            </li>
+                        }
                         @*<li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" asp-controller="AdminUser" asp-action="Vote">Proceed to Vote</a>
                             </li>*@
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="TVshow" asp-action="Create">Add TV Show Reviews</a>
-                        </li>
+                       
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -56,7 +72,7 @@
     </div>
     <footer class="footer text-white-50">
         <div class="container">
-            &copy; 2022 - The Reviews - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - The Reviews (By Shaqiq) - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

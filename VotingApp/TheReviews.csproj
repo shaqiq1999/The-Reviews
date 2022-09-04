@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <None Include="wwwroot\Image\bgimg.jpg" />
-    <None Include="wwwroot\Styles\StyleS.css" />
   </ItemGroup>
 
   <ItemGroup>

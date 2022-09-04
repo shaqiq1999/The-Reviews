@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -21,10 +22,12 @@ namespace VotingApp.Controllers
         SqlDataReader dr;
         SqlConnection con = new SqlConnection("Server=(localdb)\\mssqllocaldb;Database=VotingApp;Trusted_Connection=True;MultipleActiveResultSets=true");
         private readonly ILogger<HomeController> _logger;
+        private readonly AdminDbContext _context;
         
         private readonly UserManager<VoteAppUser> _userManager;
-        public HomeController(ILogger<HomeController> logger, UserManager<VoteAppUser> userManager)
+        public HomeController(ILogger<HomeController> logger, UserManager<VoteAppUser> userManager, AdminDbContext context)
         {
+            _context = context;
             _logger = logger;
             _userManager = userManager;
             con.ConnectionString = "Server=(localdb)\\mssqllocaldb;Database=VotingApp;Trusted_Connection=True;MultipleActiveResultSets=true";
@@ -70,7 +73,14 @@ namespace VotingApp.Controllers
         {
             return View();
         }
+       
         
+        
+        public async Task<IActionResult> Tvshow()
+        {
+
+            return View(await _context.TvShow.ToListAsync());
+        }
 
 
 

@@ -4,56 +4,65 @@
     ViewData["Title"] = "Register";
 }
 <body id="loginimg">
-<h1>@ViewData["Title"]</h1>
+<h1 style="text-align:center;">@ViewData["Title"]</h1>
 
 
-<div>
+<div style="background-color:transparent; width: 80%; margin: 30px auto; padding: 5px 5px 5px 5px;  text-align:center; ">
     <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
         <h4>Create a new account.</h4>
-        <hr />
-        <div class="row">
-            <div class=" col-md-5">
-                <div asp-validation-summary="All" class="text-danger"></div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="row align-items-center">
+            <div style="width:50%; float:left;" class=" col-md-6">
+                
 
-                <div class="form-group">
-                    <label asp-for="Input.Name"></label>
-                    <input asp-for="Input.Name" class="form-control" />
+                <div class="form-group row">
+                    <label asp-for="Input.Name" class="col-sm-4 col-form-label" >Name :</label>
+                    <i style="padding: 10px; background: dodgerblue; color: white; height:100%; float:right; text-align: center;" class="fa fa-user col-sm-1 col-form-label"></i>
+                    <input asp-for="Input.Name" style="background-color:transparent; width:60%; float:right;" class="form-control col-sm-6" />
                     <span asp-validation-for="Input.Name" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Input.Address"></label>
-                    <input asp-for="Input.Address" class="form-control" />
+                <div class="form-group row">
+                    <label asp-for="Input.Address" class="col-sm-4 col-form-label" >Address :</label>
+                    <i style="padding: 10px; background: dodgerblue; color: white; height:100%; float:right; text-align: center;" class="fa fa-location-arrow col-sm-1 col-form-label"></i>
+                    <input asp-for="Input.Address" style="background-color:transparent; width:60%; float:right;" class="form-control col-sm-6" />
                     <span asp-validation-for="Input.Address" class="text-danger"></span>
                 </div>
 
-                <div class="form-group">
-                    <label asp-for="Input.Email"></label>
-                    <input asp-for="Input.Email" class="form-control" />
+                <div class="form-group row">
+                    <label asp-for="Input.Email" class="col-sm-4 col-form-label" >Email ID :</label>
+                    <i style="padding: 10px; background: dodgerblue; color: white; height:100%; float:right; text-align: center;" class="fa fa-envelope col-sm-1 col-form-label"></i>
+                    <input asp-for="Input.Email" style="background-color:transparent; width:60%; float:right;" class="form-control col-sm-6" />
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">Register</button>
+               
             </div>
 
 
-            <div class=" col-md-5">
-                <div class="form-group">
-                    <label asp-for="Input.PhoneNumber"></label>
-                    <input asp-for="Input.PhoneNumber" class="form-control" />
+            <div class=" col-md-6">
+                <div class="form-group row">
+                    <label asp-for="Input.PhoneNumber" class="col-sm-5 col-form-label" >Phone Number :</label>
+                    <i style="padding: 10px; background: dodgerblue; color: white; height:100%; float:right; text-align: center;" class="fa fa-phone col-sm-1 col-form-label"></i>
+                    <input asp-for="Input.PhoneNumber" style="background-color:transparent;  float:right;" class="form-control col-sm-6" />
                     <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Input.Password"></label>
-                    <input asp-for="Input.Password" class="form-control" />
+                <div class="form-group row">
+                    <label asp-for="Input.Password" class="col-sm-5 col-form-label" >Password :</label>
+                    <i style="padding: 10px; background: dodgerblue; color: white; height:100%; float:right; text-align: center;" class="fa fa-key col-sm-1 col-form-label"></i>
+                    <input asp-for="Input.Password" style="background-color:transparent; width:50%; float:right;" class="form-control col-sm-6" />
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Input.ConfirmPassword"></label>
-                    <input asp-for="Input.ConfirmPassword" class="form-control" />
+                <div class="form-group row">
+                    <label asp-for="Input.ConfirmPassword" class="col-sm-5 col-form-label" >Confirm Password :</label>
+                    <i style="padding: 10px; background: dodgerblue; color: white; height:100%; float:right; text-align: center;" class="fa fa-unlock-alt col-sm-1 col-form-label"></i>
+                    <input asp-for="Input.ConfirmPassword" style="background-color:transparent; width:50%; float:right;" class="form-control col-sm-6" />
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
             </div>
+            <div style="padding-left:46%" >
+             <button type="submit" class="btn btn-primary">Register</button>
+             </div>
         </div>
 
 

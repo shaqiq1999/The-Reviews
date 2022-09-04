@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\storage\\chrome\\Practice\\TheReviews\\VotingApp\\TheReviews.csproj": {}
+    "D:\\storage\\Workspace\\Github\\TheReviews\\VotingApp\\TheReviews.csproj": {}
   },
   "projects": {
-    "D:\\storage\\chrome\\Practice\\TheReviews\\VotingApp\\TheReviews.csproj": {
+    "D:\\storage\\Workspace\\Github\\TheReviews\\VotingApp\\TheReviews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\storage\\chrome\\Practice\\TheReviews\\VotingApp\\TheReviews.csproj",
+        "projectUniqueName": "D:\\storage\\Workspace\\Github\\TheReviews\\VotingApp\\TheReviews.csproj",
         "projectName": "TheReviews",
-        "projectPath": "D:\\storage\\chrome\\Practice\\TheReviews\\VotingApp\\TheReviews.csproj",
+        "projectPath": "D:\\storage\\Workspace\\Github\\TheReviews\\VotingApp\\TheReviews.csproj",
         "packagesPath": "C:\\Users\\shaqi\\.nuget\\packages\\",
-        "outputPath": "D:\\storage\\chrome\\Practice\\TheReviews\\VotingApp\\obj\\",
+        "outputPath": "D:\\storage\\Workspace\\Github\\TheReviews\\VotingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

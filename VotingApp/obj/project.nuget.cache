@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mO+tGdM/c9HHS0lT14p/G2dqDZ/niJxc6rAbou1yJ3Q1wzk1n6BwlR1kkAmHNqHPVAYkqW0wgj9f3bw2t6nzcA==",
+  "dgSpecHash": "UAbC38EPXojEHIqt1k+6yMCjPBEJA8J7V6BRly3MWp7+lKC0d0WeRI18dKHk81cjKh2F/Fq//qbrQdhFG3swPQ==",
   "success": true,
-  "projectFilePath": "D:\\storage\\chrome\\Practice\\TheReviews\\VotingApp\\TheReviews.csproj",
+  "projectFilePath": "D:\\storage\\Workspace\\Github\\TheReviews\\VotingApp\\TheReviews.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shaqi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\shaqi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
